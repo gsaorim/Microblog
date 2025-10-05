@@ -1,4 +1,3 @@
-version: '3.8'
 
 services:
   # PostgreSQL Database
@@ -39,4 +38,5 @@ services:
     command: node examples/demo.js
 
 volumes:
+
   postgres_data:
