@@ -1,5 +1,4 @@
 import pg from 'pg';
-//Insdide the pg library, get Pool
 const { Pool } = pg;   
 import Logger from '../utils/Logger.js';
 
@@ -8,10 +7,18 @@ import Logger from '../utils/Logger.js';
    Pedido      Tradutor       Resposta */
 
 
+const dbConfig = {
+  host: process.env.DB_HOST || 'localhost',
+  port: process.env.DB_PORT || 5432,
+  database: process.env.DB_NAME || 'microblog',
+  user: process.env.DB_USER || 'postgres',
+  password: process.env.DB_PASSWORD || '123456'
+};
+
 export class Database 
 {
     
-    constructor(config)
+    constructor(config = dbConfig)
     {
         this.pool = new Pool(config);
 
@@ -54,5 +61,6 @@ export class Database
         await this.pool.end();  //Wait to close the pool connections
     }
 }
+
 
 
