@@ -27,8 +27,9 @@ Um sistema completo de microblogging desenvolvido em Node.js com PostgreSQL, imp
 ```bash
 # Clone o repositório
 git clone https://github.com/gsaorim/Microblog-orm.git
-cd Microblog-or
+cd Microblog-orm
 
 # Execute com Docker Compose
 
 docker-compose up
+
