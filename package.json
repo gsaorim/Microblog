@@ -1,0 +1,13 @@
+{
+    "name": "microblog-orm",
+    "version": "1.0.0",
+    "description": "Biblioteca ORM para microblogging",
+    "main": "scr/index.js",
+    "type": "module",
+    "scripts": {
+        "start": "node examples/demo.js"
+    },
+    "dependencies": {
+        "pg": "^8.16.3"
+    }
+}
