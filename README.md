@@ -20,15 +20,15 @@ Um sistema completo de microblogging desenvolvido em Node.js com PostgreSQL, imp
 
 ### Pré-requisitos
 
-- Node.js 18+ **OU** Docker
-- PostgreSQL **OU** Docker
+- Docker e Docker Compose instalados
 
-### 🐳 Execução com Docker (Recomendado)
+### 🐳 Execução com Docker 
 
 ```bash
 # Clone o repositório
-git clone https://github.com/seu-usuario/microblog-orm.git
-cd microblog-orm
+git clone https://github.com/gsaorim/Microblog-orm.git
+cd Microblog-or
 
 # Execute com Docker Compose
+
 docker-compose up
