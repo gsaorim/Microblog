@@ -5,11 +5,13 @@
     "main": "scr/index.js",
     "type": "module",
     "scripts": {
-        "start": "node -r dotenv/config examples/demo.js",
-        "dev": "node -r dotenv/config examples/demo.js"
+        "start": "node index.js",
+        "test": "node index.js",
+        "demo": "node index.js"
     },
     "dependencies": {
         "pg": "^8.16.3"
     }
 }
+
 
