@@ -8,13 +8,14 @@ Um sistema completo de microblogging desenvolvido em Node.js com PostgreSQL, imp
 
 ## ✨ Funcionalidades
 
-- ✅ **ORM Completo** - Classes para gerenciamento de banco de dados
+- ✅ **ORM Customizado** - Classes para gerenciamento de banco de dados
 - ✅ **CRUD Completo** - Create, Read, Update, Delete
-- ✅ **Validações** - Regras de negócio robustas
+- ✅ **Validações de Negócio** - Regras de negócio robustas
 - ✅ **Sistema de Logs** - Registro detalhado de operações
 - ✅ **Buscas Avançadas** - Por conteúdo, usuário, etc.
-- ✅ **Docker Support** - Execução em container
-- ✅ **Tratamento de Erros** - Sistema robusto de exceções
+- ✅ **Docker Integration** - Containerização completa com PostgreSQL
+- ✅ **Tratamento de Erros** - Sistema robusto de exceções e validações
+- ✅ **Consultas Otimizadas** - Índices e queries performáticas
 
 ## 🚀 Começando
 
@@ -30,11 +31,16 @@ git clone https://github.com/gsaorim/Microblog-orm.git
 cd Microblog-orm
 
 # Execute com Docker Compose
+docker-compose up -d
 
-docker-compose up
+# Verifique se os containers estão rodando
+docker ps
 
-#Se não aparecer os testes
-
+# Se não aparecer os testes automaticamente, verifique os logs:
 docker logs microblog-app
+
+# Ou execute manualmente:
+docker exec -it microblog-app node index.js
+
 
 
