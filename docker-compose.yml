@@ -1,6 +1,7 @@
 
+version: '3.8'
+
 services:
-  # PostgreSQL Database
   postgres:
     image: postgres:15
     container_name: microblog-postgres
@@ -19,7 +20,6 @@ services:
       timeout: 5s
       retries: 5
 
-  # Node.js Application
   app:
     build: .
     container_name: microblog-app
@@ -35,8 +35,7 @@ services:
     volumes:
       - .:/usr/src/app
       - /usr/src/app/node_modules
-    command: node examples/demo.js
+    command: node index.js 
 
 volumes:
-
   postgres_data:
