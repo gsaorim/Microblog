@@ -33,3 +33,8 @@ cd Microblog-orm
 
 docker-compose up
 
+#Se não aparecer os testes
+
+docker logs microblog-app
+
+
